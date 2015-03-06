@@ -1,0 +1,165 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+
+   This is the style reset
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+ HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ end of style reset*/
+
+
+/* this is the navigation bar */
+
+
+/* Layout */
+
+.logo{
+	position: absolute;
+	left: 0px;
+	width: 20%;
+}
+
+.navigation{
+	position: fixed;
+	top: 0px;
+	width: 400px auto;
+	margin-left: 300px; 
+}
+
+.section{
+	width: 100%;
+	min-height: 300px;
+	background-color: #222;
+	border: 1px solid blue;
+
+}
+
+.box{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	margin: 20px auto;
+  	padding: 50px;
+  	border: 1px solid #fff;
+  	
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: o;
+}
+/* 
+    list-style-type: none - Removes the bullets. A navigation bar does not need list markers
+    Setting margins and padding to 0 to remove browser default settings
+*/
+
+li{
+	float: left;
+}
+
+a:link, a:visited {
+	display: block;
+    width: 120px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #000000;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active {
+    background-color: #333;
+}
+/* 
+    float: left - use float to get block elements to slide next to each other
+    display: block - Displaying the links as block elements makes the whole link area clickable (not just the text), and it allows us to specify the width
+    width: 60px - Since block elements take up the full width available, they cannot float next to each other. We specify the width of the links to 60px
+*/
+
+body {
+	font-family: Helvetica, Arial, _sans;
+	font-size: 13px;
+	color: #FFFFFF;
+	font-style: normal;
+	line-height: 100%;
+
+	background:url("images/mountains.jpg");
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	width: 100%;
+	background-color: #111; 
+
+
+
+h1 { 
+	font-size: 100px;
+	color:#FFFFFF;
+}
+
+h2 {
+	font-size: 20px;
+	color: #FFFFFF;
+	line-height: 15px;
+}
+
+.numberofyears {
+	font-size: 200px;
+	color: black;
+}
+
+em{
+	font-style: italic;
+	font-size: 18px;
+}
+
+
+
+/* this is a line comment*/

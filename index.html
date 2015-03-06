@@ -1,14 +1,186 @@
 <!DOCTYPE html>
 <html>
+<!-- Hello Stranger! Welcome to my humble portfolio. I'm just learning this, so if you find a bug or have some tips please let me know! I'm eager to learn! -->
+
+<head>
+	<title>Felix Schmidt UX:Research & Concept</title>
+	<link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<!--Smooth Scroll - v1.4.5 - 2012-07-22
+* Copyright (c) 2012 Karl Swedberg; Licensed MIT, GPL -->
+
+	<!--	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+		                $(".contactLink").click(function(){
+		                    if ($("#contactForm").is(":hidden")){
+		                        $("#contactForm").slideDown("slow");
+		                    }
+		                    else{
+		                        $("#contactForm").slideUp("slow");
+		                    }
+		                });
+		            });
+		            function closeForm(){
+		                $("#messageSent").show("slow");
+		                setTimeout('$("#messageSent").hide();$("#contactForm").slideUp("slow")', 2000);
+		           }
+
+		$(document).ready(function() {
+		  function filterPath(string) {
+		    return string
+		      .replace(/^\//,'')
+		      .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+		      .replace(/\/$/,'');
+		  }
+		  $('a[href*=#]').each(function() {
+		    if ( filterPath(location.pathname) == filterPath(this.pathname)
+		    && location.hostname == this.hostname
+		    && this.hash.replace(/#/,'') ) {
+		      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+		      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+		       if ($target) {
+		         var targetOffset = $target.offset().top;
+		         $(this).click(function() {
+		           $('html, body').animate({scrollTop: targetOffset}, 1000);
+		           var d = document.createElement("div");
+		        d.style.height = "101%";
+		        d.style.overflow = "hidden";
+		        document.body.appendChild(d);
+		        window.scrollTo(0,scrollToM);
+		        setTimeout(function() {
+		        d.parentNode.removeChild(d);
+		            }, 10);
+		           return false;
+		         });
+		      }
+		    }
+		  });
+		});
+
+		</script>
+
+-->
+
 <body>
-<h1>Servus!</h1>
-<h2>Welcome to my (soon to be) Portfolio</h2>
+	<div class="homepage"> 
+			<header> 
+				<div class="logo"> 
+					<h2>Felix Schmidt</h2>
+					<h4>UX:Research & Concept</h4>
+				</div>
+			</header>
+
+			<nav class="navigation">  <!-- in the example he added a <div id="nav" -->
+				<ul>
+					<li><a href="#default">Home</a></li>
+					<li><a href="#work">How I Work</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#about">About</a></li>
+				</ul>
+			</nav>
+			
+	</div>	
+
+<!-- this is where the first page beginns-->
+	
+		<div class="section"> 
+			<a id="default"></a>
+
+			<br>
+				<h1>Servus,</h1> 
+					<h2><p>My name is Felix.</p>
+					<p> I do UX: Research & Concept. </p>
+					<p> This is my Portfolio.</p>
+				</h2>
+				
+				<h1 class="numberofyears">5</h1> 
+				<h2>years of experience in UX.</h2>
+
+				<p><em>Pen & paper </em> are still my favorite tools. I find sketching to be the fastest, easiest and most tactile way to get ideas out of my head and to start working out solutions for design problems. I also use whiteboards a fair bit for thrashing out ideas and approaches to certain problems. </p>
+		</div>
+	
+
+<!-- This is where the second page begins-->
+
+		<div class="section">
+			<a id="work"></a>
+			
+			<h2> How I work </h2>
+			<p> This is where i will describe my working process. Basically I'm a super awesome UX Ninja. </p>
+		</div>
 
 
-<img src="http://www.viralczar.com/wp-content/uploads/2014/07/1027_4.jpg" alt="Still polishing this site" />
+<!-- This is where the third page begins-->
+		<div class="section">
+			<a id="portfolio"></a>
 
-<p>this site is still being polished</p>
+				<h2> Portfolio </h2>
+					<div class="box">
+						<h3>research 1 </h3>
+						<p> short description </p>
+					</div>
 
+					<div class="box">
+						<h3>research 2 </h3>
+						<p> short description </p>
+
+					</div>
+
+					<div class="box">
+						<h3>research 3 </h3>
+						<p> short description </p>
+					</div>
+
+					<div class="box">
+						<h3>research 4 </h3>
+						<p> short description </p>
+					</div>
+
+					<div class="box">
+						<h3>concept 1 </h3>
+						<p> short description </p>
+					</div>
+
+					<div class="box">
+						<h3>concept 2 </h3>
+						<p> short description </p>
+					</div>
+
+
+					<div class="box">
+						<h3>concept 3 </h3>
+						<p> short description </p>
+					</div>
+
+
+					<div class="box">
+						<h3>concept 4 </h3>
+						<p> short description </p>
+					</div>
+		</div>
+
+
+<!-- This is where the fourth page begins-->
+		<div class="section">
+			<a id="contact"></a>
+
+				<h2> Contact me </h2>
+		</div>
+
+<!-- This is where the fifth page begins-->
+		<div class="section">
+			<a id="about"></a>
+		
+				<h2> About </h2>
+				<p> Congrats! You made it to the end! What a ride! 
+					Still got questions? Give me a call! </p>
+		</div> 
+
+
+	
 
 </body>
 </html>
