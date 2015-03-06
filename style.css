@@ -58,20 +58,38 @@ table {
 
 /* Layout */
 
+body {
+	font-family: Helvetica, Arial, _sans;
+	font-size: 13px;
+	color: #FFFFFF;
+	font-style: normal;
+	line-height: 100%;
+
+	background:url("images/mountains.jpg");
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	width: 100%;
+	background-color: #111; 
+}
+
+
 .logo{
 	position: absolute;
-	left: 0px;
+	left: 10px;
+	top: 10px;
 	width: 20%;
+	min-height: 20px;
 }
 
 .navigation{
 	position: fixed;
-	top: 0px;
-	width: 400px auto;
+	top: 10px;
+	right: 10px;
 	margin-left: 300px; 
 }
 
 .section{
+	display: inline-block;
 	width: 100%;
 	min-height: 300px;
 	background-color: #222;
@@ -79,15 +97,26 @@ table {
 
 }
 
+.portfoliocontainerleft{
+	position: left;
+	width: 50%;
+	border: 1px solid red;
+}
+
+.portfoliocontainerright{
+	position: right;
+	width: 50%;
+}
+
 .box{
+	display: inline-block;
 	position: relative;
 	width: 100px;
 	height: 100px;
 	margin: 20px auto;
   	padding: 50px;
   	border: 1px solid #fff;
-  	
-}
+ }
 
 ul{
 	list-style-type: none;
@@ -124,23 +153,8 @@ a:hover, a:active {
     width: 60px - Since block elements take up the full width available, they cannot float next to each other. We specify the width of the links to 60px
 */
 
-body {
-	font-family: Helvetica, Arial, _sans;
-	font-size: 13px;
-	color: #FFFFFF;
-	font-style: normal;
-	line-height: 100%;
-
-	background:url("images/mountains.jpg");
-	background-attachment: scroll;
-	background-repeat: no-repeat;
-	width: 100%;
-	background-color: #111; 
-
-
-
 h1 { 
-	font-size: 100px;
+	font-size: 50px;
 	color:#FFFFFF;
 }
 
@@ -152,7 +166,7 @@ h2 {
 
 .numberofyears {
 	font-size: 200px;
-	color: black;
+	color: #fff;
 }
 
 em{
