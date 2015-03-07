@@ -59,93 +59,110 @@ table {
 /* Layout */
 
 body {
+
+	width: 90%;
+	margin: 0 auto;
 	font-family: Helvetica, Arial, _sans;
-	font-size: 13px;
-	color: #FFFFFF;
+	font-size: 16px;
 	font-style: normal;
-	line-height: 100%;
-
-	background:url("images/mountains.jpg");
-	background-attachment: scroll;
-	background-repeat: no-repeat;
-	width: 100%;
-	background-color: #111; 
+	color: #fff;
+	background-color: #111;
+	
 }
-
-
-.logo{
-	position: absolute;
-	left: 10px;
-	top: 10px;
-	width: 20%;
-	min-height: 20px;
-}
-
-.navigation{
-	position: fixed;
-	top: 10px;
-	right: 10px;
-	margin-left: 300px; 
-}
-
-.section{
-	display: inline-block;
-	width: 100%;
-	min-height: 300px;
-	background-color: #222;
-	border: 1px solid blue;
-
-}
-
-.portfoliocontainerleft{
-	position: left;
-	width: 50%;
-	border: 1px solid red;
-}
-
-.portfoliocontainerright{
-	position: right;
-	width: 50%;
-}
-
-.box{
-	display: inline-block;
-	position: relative;
-	width: 100px;
-	height: 100px;
-	margin: 20px auto;
-  	padding: 50px;
-  	border: 1px solid #fff;
- }
 
 ul{
+	display: inline;
 	list-style-type: none;
-	margin: 0;
-	padding: o;
+	width: 120px;
+	margin: 0.5em;
+	padding: 0.5em;
+
+	font-weight: bold;
 }
 /* 
     list-style-type: none - Removes the bullets. A navigation bar does not need list markers
     Setting margins and padding to 0 to remove browser default settings
 */
 
-li{
-	float: left;
-}
-
 a:link, a:visited {
-	display: block;
-    width: 120px;
-    font-weight: bold;
+	
     color: #FFFFFF;
     background-color: #000000;
-    text-align: center;
     padding: 4px;
     text-decoration: none;
     text-transform: uppercase;
+   
+    
 }
 
 a:hover, a:active {
     background-color: #333;
+}
+
+#nav, #feature, #work, #portfolio, #contact #footer {
+	display: inline-block;
+	border: 1px solid pink; 
+
+	text-align: center;
+    padding: 4px;
+    text-decoration: none;
+	
+}
+
+.column, .column2 {
+	display: inline-block;
+	width: 49%;
+	float: left;
+	border: 1px solid green; 
+}
+
+.column2 {
+	margin-right: 0%;
+}
+
+#nav{
+	position: fixed;
+	top: 0px;
+	padding: 10px;
+	margin: 0px;
+	width: 90%;
+	background-color: #000; 
+}
+
+
+#feature {
+	background:url("images/mountains.jpg");
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	width: 90%;
+}
+
+
+
+.box, .box2{
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	margin: 0.5em auto;
+  	padding: 0.5em;
+  	border: 1px solid #fff;
+
+  	text-align: center;
+    padding: 4px;
+    text-decoration: none;
+
+ }
+
+#footer {
+	background-color: #000;
+	padding: 0.5em 0;
+
+}
+
+
+
+.p {
+	text-align: left;
 }
 /* 
     float: left - use float to get block elements to slide next to each other
@@ -153,6 +170,7 @@ a:hover, a:active {
     width: 60px - Since block elements take up the full width available, they cannot float next to each other. We specify the width of the links to 60px
 */
 
+/*
 h1 { 
 	font-size: 50px;
 	color:#FFFFFF;
@@ -164,15 +182,9 @@ h2 {
 	line-height: 15px;
 }
 
-.numberofyears {
-	font-size: 200px;
-	color: #fff;
-}
 
-em{
-	font-style: italic;
-	font-size: 18px;
-}
+
+
 
 
 

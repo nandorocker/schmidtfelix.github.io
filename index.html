@@ -64,30 +64,28 @@
 -->
 
 <body>
-	<div class="home"> 
-			<header> 
-				<div class="logo"> 
-					<h2>Felix Schmidt</h2>
-					<h4>UX:Research & Concept</h4>
-				</div>
-			</header>
-
-			<nav class="navigation">  <!-- in the example he added a <div id="nav" -->
-				<ul>
-					<li><a href="#default">Home</a></li>
-					<li><a href="#work">How I Work</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="#about">About</a></li>
-				</ul>
-			</nav>
+	<div id="header"> 
 			
+		<div id="logo"> 
+			<h2>Felix Schmidt</h2>
+			<h4>UX:Research & Concept</h4>
+		</div>
+		
+
+		<div id="nav">
+			<ul>
+				<li><a href="#feature">Home</a></li>
+				<li><a href="#work">How I Work</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="#footer">About</a></li>
+			</ul>
+		</div>
 	</div>	
 
 <!-- this is where the first page beginns-->
-	
-		<div class="section"> 
-			<a id="default"></a>
+	<div id="content">
+		<div id="feature">
 
 			<br>
 				<h1>Servus,</h1> 
@@ -96,8 +94,7 @@
 					<p> This is my Portfolio.</p>
 				</h2>
 				
-				<h1 class="numberofyears">5</h1> 
-				<h2>years of experience in UX.</h2>
+				<h2>5 years of experience in UX.</h2>
 
 				<p><em>Pen & paper </em> are still my favorite tools. I find sketching to be the fastest, easiest and most tactile way to get ideas out of my head and to start working out solutions for design problems. I also use whiteboards a fair bit for thrashing out ideas and approaches to certain problems. </p>
 		</div>
@@ -105,80 +102,72 @@
 
 <!-- This is where the second page begins-->
 
-		<div class="section">
-			<a id="work"></a>
-			
+		<div id="work">
+					
 			<h2> How I work </h2>
-			<p> This is where i will describe my working process. Basically I'm a super awesome UX Ninja. </p>
+			<p> This is where i will describe my working process. Basically I'm a super awesome UX Ninja. 
+			</p>
 		</div>
 
 
 <!-- This is where the third page begins-->
-		<div class="section">
-			<a id="portfolio"></a>
+		<div id="portfolio">
+			<h2> Portfolio </h2>
 
-				<h2> Portfolio </h2>
+				 <div class="column">
+					<p> this is column 1 </p>
 
-				<div class="Portfoliocontainerleft"> 
 					<div class="box">
-						<h3>research 1 </h3>
-						<p> short description </p>
+						<h3> research 1 </h3>
 					</div>
 
 					<div class="box">
-						<h3>research 2 </h3>
-						<p> short description </p>
-
+						<h3> research 2 </h3>
 					</div>
 
 					<div class="box">
-						<h3>research 3 </h3>
-						<p> short description </p>
+						<h3> research 3 </h3>
 					</div>
 
 					<div class="box">
-						<h3>research 4 </h3>
-						<p> short description </p>
+						<h3> research 4 </h3>
 					</div>
 				</div>
 
-				<div class="Portfoliocontainerright"> 
-					<div class="box">
-						<h3>concept 1 </h3>
-						<p> short description </p>
+				<div class="column2">
+					<p> this is column2 </p>
+
+					<div class="box2">
+						<h3> concept 1 </h3>
 					</div>
 
-					<div class="box">
-						<h3>concept 2 </h3>
-						<p> short description </p>
+					<div class="box2">
+						<h3> concept 2 </h3>
 					</div>
 
-
-					<div class="box">
-						<h3>concept 3 </h3>
-						<p> short description </p>
+					<div class="box2">
+						<h3> concept 3 </h3>
 					</div>
 
-
-					<div class="box">
-						<h3>concept 4 </h3>
-						<p> short description </p>
+					<div class="box2">
+						<h3> concept 4 </h3>
 					</div>
 				</div>
 		</div>
 
 
 <!-- This is where the fourth page begins-->
-		<div class="section">
-			<a id="contact"></a>
+		<div id="contact">
+			
 
 				<h2> Contact me </h2>
 		</div>
 
+	</div> <!-- end of content div-->
+
 <!-- This is where the fifth page begins-->
-		<div class="section">
-			<a id="about"></a>
-		
+		<div id="footer">
+				
 				<h2> About </h2>
 				<p> Congrats! You made it to the end! What a ride! 
 					Still got questions? Give me a call! </p>
