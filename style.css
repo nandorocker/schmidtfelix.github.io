@@ -1,9 +1,20 @@
+/*
+	General notes:
+	
+	- You aimed high for this page and that gets you a gold star. Great work!
+	- However, you still need work on your HTML semantics. Too many divs, too many #ids.
+	- When linking to sections, we use <a name="#name"> and not ID, if that's what you're thinking
+	- Remember what I say in class 1000 times, IDs are taxing and should only be used for very specific
+	sections which will be manipulated with Javascript, for example, like a menu. 
+	By default, avoid that.
+	- Why no reset? That's mandatory for this course ;)
+*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 
    This is the style reset
-
+*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -26,7 +37,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
- HTML5 display-role reset for older browsers 
+/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -50,142 +61,205 @@ table {
 	border-spacing: 0;
 }
 
- end of style reset*/
+/* end of style reset*/
 
 
-/* this is the navigation bar */
-
-
-/* Layout */
+/* 
+ * Base Styles (the basic definitions of fonts and elements go here)
+ */ 
 
 body {
-
+	/*
+	
+	Body = EVERYTHING on your site. There's no reason to make it less than 100%. Use divs
+	or semantic elements for that.
+	
 	width: 90%;
 	margin: 0 auto;
+
+	*/
+	/*padding-top: 80px;*/
 	font-family: Helvetica, Arial, _sans;
 	font-size: 16px;
 	font-style: normal;
 	color: #fff;
 	background-color: #111;
-	
+	/* neat CSS3 trick ;) */
+	background: url("images/mountains.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
-ul{
+ul {
+	font-weight: bold;
+	/*
+
 	display: inline;
-	list-style-type: none;
+
+	This should be applied to the nav <li>, not to the <ul>
+	
+	*/
+	/*
+
 	width: 120px;
 	margin: 0.5em;
 	padding: 0.5em;
+	
+	At the "base" area, let's avoid layout-specific definitions.
+	This here would mean ANY list on your site would have a specific width, margin, padding.
+	You are referring to the menu, so let's redefine this later.
 
-	font-weight: bold;
+	*/
 }
-/* 
-    list-style-type: none - Removes the bullets. A navigation bar does not need list markers
-    Setting margins and padding to 0 to remove browser default settings
+
+/*
+
+You must define your basic styles for h1, h2, h3, etc!
+Finish what I started :)
+
 */
 
+h1, h2, h3, h4, h5 {
+	margin-top: 0.2em;
+	margin-bottom: 0.4em;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 2.6em;
+	line-height: 2em;
+}
+
+h2 {
+	font-size: 1.8em;
+	line-height: 1.6em;
+}
+
 a:link, a:visited {
-	
     color: #FFFFFF;
     background-color: #000000;
     padding: 4px;
     text-decoration: none;
     text-transform: uppercase;
-   
-    
 }
 
 a:hover, a:active {
     background-color: #333;
 }
 
-#nav, #feature, #work, #portfolio, #contact #footer {
-	display: inline-block;
-	border: 1px solid pink; 
+section {
+	min-height: 16em;
+	padding-top: 8em;
+}
 
+/*
+ * Layout (styles pertaining to positioning of elements)
+ */
+ 
+/*
+
+Confusing statement!
+Were you trying to find features in common between all these elements? Be more specific in each statement
+
+nav, #feature, #work, #portfolio, #contact, footer {
+	display: inline-block;
 	text-align: center;
     padding: 4px;
     text-decoration: none;
-	
 }
+*/
 
-.column, .column2 {
-	display: inline-block;
-	width: 49%;
-	float: left;
-	border: 1px solid green; 
-}
 
-.column2 {
-	margin-right: 0%;
-}
-
-#nav{
+/* Avoid div & span whenever possible. Using nav here (more semantic) */
+nav {
 	position: fixed;
 	top: 0px;
 	padding: 10px;
 	margin: 0px;
-	width: 90%;
+	width: 100%;
 	background-color: #000; 
 }
 
-
-#feature {
-	background:url("images/mountains.jpg");
-	background-attachment: scroll;
-	background-repeat: no-repeat;
-	width: 90%;
+nav li {
+	display: inline;
 }
 
+/*
+nav ul {
+	width: 120px;
+	margin: 0.5em;
+	padding: 0.5em;
+}
 
+No idea why this is necessary?
 
-.box, .box2{
+*/
+
+.logo {
+	margin-bottom: 2.8em;
+}
+
+.logo h1 {
+	font-size: 2.4em;
+	line-height: 1.2em;
+	margin-bottom: 0;
+}
+
+.logo h2 {
+	font-size: 1.4em;
+	margin: 0;
+}
+
+.portfolio article {
 	display: inline-block;
 	width: 300px;
 	height: 300px;
 	margin: 0.5em auto;
   	padding: 0.5em;
   	border: 1px solid #fff;
-
   	text-align: center;
     padding: 4px;
     text-decoration: none;
 
  }
 
-#footer {
-	background-color: #000;
-	padding: 0.5em 0;
-
+footer {
+	background-color: #111;
+	padding: 3em 0 6em 0;
+	text-align: center;
+	color: #777;
 }
-
-
-
-.p {
-	text-align: left;
-}
-/* 
-    float: left - use float to get block elements to slide next to each other
-    display: block - Displaying the links as block elements makes the whole link area clickable (not just the text), and it allows us to specify the width
-    width: 60px - Since block elements take up the full width available, they cannot float next to each other. We specify the width of the links to 60px
-*/
 
 /*
-h1 { 
-	font-size: 50px;
-	color:#FFFFFF;
+ * Modules (re-usable pieces of CSS)
+ */
+
+/*
+
+	No need for two classes that say the same thing (DRY!) Use the same class as many times as needed
+	
+	.column, .column2 {
+
+*/
+.column {
+	display: inline-block;
+	width: 50%;
+	float: left;
+	margin: 0;
+	/*border: 1px solid green; */
 }
 
-h2 {
-	font-size: 20px;
-	color: #FFFFFF;
-	line-height: 15px;
+.content {
+	width: 80%;
+	margin: 0 auto;
 }
 
+/*
+	
+	Good work man. Keep it up!!!
+	Don't use your CSS file to take notes; please keep that somewhere else! Your team thanks you :)
+	Remember also that your Git history will have all your changes.
 
-
-
-
-
-
-/* this is a line comment*/
+*/
