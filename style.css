@@ -1,14 +1,3 @@
-/*
-	General notes:
-	
-	- You aimed high for this page and that gets you a gold star. Great work!
-	- However, you still need work on your HTML semantics. Too many divs, too many #ids.
-	- When linking to sections, we use <a name="#name"> and not ID, if that's what you're thinking
-	- Remember what I say in class 1000 times, IDs are taxing and should only be used for very specific
-	sections which will be manipulated with Javascript, for example, like a menu. 
-	By default, avoid that.
-	- Why no reset? That's mandatory for this course ;)
-*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
